@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{array}}">
+    <image class="habits-icon" src="{{item.iconPath}}"></image>
+    <view>{{item.title}}</view>
+    <view>已坚持 {{item.days}} 天</view>
+    <icon wx:if="{{item.completed}}" type="success"></icon>
+  </view>
+</view>
