@@ -1,29 +1,36 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/explore/explore"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "萌芽习惯",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "color": "#A6A6A6",
     "selectedColor": "#FFC300",
+    "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "打卡"
+        "text": "打卡",
+        "iconPath":"/images/assignment-turned-in.png",
+        "selectedIconPath":"/images/assignment-turned-in2.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "发现"
+        "pagePath": "pages/explore/explore",
+        "text": "发现",
+        "iconPath": "/images/explore.png",
+        "selectedIconPath": "/images/explore2.png"
       },
       {
         "pagePath":"pages/index/index",
-        "text":"我的"
+        "text":"我的",
+        "iconPath": "/images/person.png",
+        "selectedIconPath": "/images/person2.png"
       }
     ]
   }
