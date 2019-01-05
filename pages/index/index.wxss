@@ -2,7 +2,7 @@
 .habit-box {
   width: 100%;
   height: 148rpx;
-  box-shadow: 0rpx 4rpx 20rpx rgba(0, 0, 0, .3);
+  box-shadow: 0rpx 1rpx 10rpx rgba(0, 0, 0, .4);
   box-sizing: border-box;
   border-radius: 10rpx;
   position: relative;
@@ -13,7 +13,7 @@
 }
 
 .habit-box:active {
-  box-shadow: 0rpx 4rpx 20rpx rgba(0, 0, 0, .4);
+  box-shadow: 0rpx 1rpx 10rpx rgba(0, 0, 0, .5);
 }
 
 .habit-box .icon {

@@ -11,26 +11,26 @@
   },
   "tabBar": {
     "color": "#A6A6A6",
-    "selectedColor": "#FFC300",
+    "selectedColor": "#000000",
     "borderStyle": "white",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "打卡",
-        "iconPath":"/images/assignment-turned-in.png",
-        "selectedIconPath":"/images/assignment-turned-in2.png"
+        "iconPath":"/images/turned-in4.png",
+        "selectedIconPath":"/images/turned-in3.png"
       },
       {
         "pagePath": "pages/explore/explore",
         "text": "发现",
-        "iconPath": "/images/explore.png",
-        "selectedIconPath": "/images/explore2.png"
+        "iconPath": "/images/explore4.png",
+        "selectedIconPath": "/images/explore3.png"
       },
       {
         "pagePath":"pages/index/index",
         "text":"我的",
-        "iconPath": "/images/person.png",
-        "selectedIconPath": "/images/person2.png"
+        "iconPath": "/images/person4.png",
+        "selectedIconPath": "/images/person3.png"
       }
     ]
   }
