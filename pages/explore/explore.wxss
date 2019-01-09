@@ -6,3 +6,78 @@
 .log-item {
   margin: 10rpx;
 }
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.04) 30%);
+}
+
+.promotion {
+  background: #ffffff;
+  padding: 20rpx 30rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.promotion .banner {
+  height: 300rpx;
+}
+
+.promotion .slide-image {
+  width:100%;
+  height: 100%;
+  border-radius: 14rpx;
+}
+
+.promotion .habits-recommendation{
+  margin-top: 30rpx;
+  box-shadow: 0rpx 1rpx 20rpx rgba(0, 0, 0, 0.2);
+  border-radius: 14rpx;
+  position: relative;
+  padding: 30rpx;
+}
+
+.habits-recommendation .header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.habits-recommendation .whatshot-icon {
+  width:44rpx;
+  height: 44rpx;
+}
+
+.habits-recommendation .header > .title{
+  font-size: 16px;
+  margin-left: 10rpx;
+}
+
+.habits-recommendation .more-habits {
+  font-size:12px;
+  color: #a6a6a6;
+  margin-left: auto;
+}
+
+.habits-recommendation .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.habits-recommendation .habit-item {
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.habit-item > .icon{
+  width: 88rpx;
+  height: 88rpx;
+}
+
+.habit-item > .habit-title{
+  font-size:12px;
+  color: #7d7e80;
+}

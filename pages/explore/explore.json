@@ -1,4 +1,8 @@
 {
-  "navigationBarTitleText": "查看启动日志",
-  "usingComponents": {}
+  "navigationBarTitleText": "萌芽习惯",
+  "usingComponents": {
+    "van-tab": "/miniprogram_npm/vant-weapp/tab/index",
+    "van-tabs": "/miniprogram_npm/vant-weapp/tabs/index"
+  }
+  
 }

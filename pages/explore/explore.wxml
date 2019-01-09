@@ -1,4 +1,39 @@
 <!--logs.wxml-->
 <view class="container">  
+  <van-tabs active="{{active}}" bind:change="onChange" color="#FFC300" swipe-threshold="5" border="{{false}}" animated>
+    <van-tab title="推荐" title-style="font-size: 16px">
+      <view class="promotion">
+        <swiper
+          class="banner"
+          indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}">
+          <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+            <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+          </swiper-item>
+        </swiper>
+        <view class="habits-recommendation">
+          <view class="header">
+            <image class="whatshot-icon" src='/images/whatshot.png'></image>
+            <view class="title">热门习惯</view>
+            <view class="more-habits">更多 ></view>
+          </view>
+          <view class="content">
+            <view class="habit-item" wx:for="{{habitsRecommendation}}" wx:key="*this">
+              <image class="icon" src="{{item.iconPath}}"></image>
+              <view class="habit-title">{{item.title}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="关注" title-style="font-size: 16px">关注</van-tab>
+    <van-tab title="最新" title-style="font-size: 16px">最新</van-tab>
+    <van-tab title="  " disabled>关注</van-tab>
+    <van-tab title="  " disabled>最新</van-tab>
+  </van-tabs> 
+  
+
   <view class="bar-shadow"></view>
 </view>

@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="habit-box" wx:for="{{array}}">
+  <view class="habit-box" wx:for="{{array}}" wx:key="*this">
     <image class="icon" src="{{item.iconPath}}"></image>
     <view class="title">{{item.title}}</view>
     <view class="days">已坚持 {{item.days}} 天</view>
