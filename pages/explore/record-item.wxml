@@ -1,0 +1,42 @@
+<template name="recordItem">
+  <view class="record-item">
+    <view class="header">
+      <image class="user-icon" src="{{userIconPath}}"></image>
+      <view class="description1">
+        <view class="user-name">{{userName}}</view>
+        <view class="habit-description">坚持
+          <view class="habit-name">#{{habitName}}#</view>
+        </view>
+      </view>
+      <view class="description2">
+        <view class="record-time">{{recordTime}}</view>
+        <view class="record-description">
+          <text class="record-days">{{recordDays}}</text> 天
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <image class="record-image" wx:if="{{recordImagePath}}" src="{{recordImagePath}}"  mode="aspectFill"></image>
+      <view class="record-text" pre>{{recordText}}</view>
+      <view class="comment" wx:if="{{comment}}">
+        <view wx:for="{{comment}}" wx:key="*this" class="line">
+          <text class="from">{{item.from}} </text>
+          <text wx:if="{{item.to}}">回复 <text class="to">{{item.to}}</text></text>
+          <text class="comment-content" wx:if="{{item.content}}"> ：{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="interaction">
+      <view class="i-like">
+        <image class="icon" src="{{liked ? '/images/liked.png' : '/images/like.png'}}" />
+        <text class="count">{{countLike}}</text>
+      </view>
+      <view class="i-comment">
+        <image class="icon" src="/images/comment.png" />
+        <text class="count">{{countComment}}</text>
+      </view>
+      <image class="share icon" src="/images/share.png" />
+    </view>
+  </view>
+
+</template>

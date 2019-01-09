@@ -1,4 +1,6 @@
 <!--logs.wxml-->
+<import src="record-item.wxml" />
+
 <view class="container">  
   <van-tabs active="{{active}}" bind:change="onChange" color="#FFC300" swipe-threshold="5" border="{{false}}" animated>
     <van-tab title="推荐" title-style="font-size: 16px">
@@ -26,6 +28,9 @@
             </view>
           </view>
         </view>
+      </view>
+      <view wx:for="{{recordList}}" wx:key="*this">
+        <template is="recordItem" data="{{...item}}" />
       </view>
     </van-tab>
     <van-tab title="关注" title-style="font-size: 16px">关注</van-tab>
