@@ -2,8 +2,10 @@
 <import src="record-item.wxml" />
 
 <view class="container">  
-  <van-tabs active="{{active}}" bind:change="onChange" color="#FFC300" swipe-threshold="5" border="{{false}}" animated>
+  <van-tabs color="#FFC300" swipe-threshold="5" border="{{false}}" sticky scroll-top="{{scrollTop}}">
+  <!--顶部tab导航，使用vant组件库-->
     <van-tab title="推荐" title-style="font-size: 16px">
+    <!--推荐页自顶向下内容依次为：banner、热门习惯和记录列表-->
       <view class="promotion">
         <swiper
           class="banner"
@@ -33,10 +35,20 @@
         <template is="recordItem" data="{{...item}}" />
       </view>
     </van-tab>
-    <van-tab title="关注" title-style="font-size: 16px">关注</van-tab>
-    <van-tab title="最新" title-style="font-size: 16px">最新</van-tab>
-    <van-tab title="  " disabled>关注</van-tab>
-    <van-tab title="  " disabled>最新</van-tab>
+    <van-tab title="关注" title-style="font-size: 16px">
+    <!--关注页内容为：记录列表-->
+      <view wx:for="{{recordList}}" wx:key="*this">
+        <template is="recordItem" data="{{...item}}" />
+      </view>
+    </van-tab>
+    <van-tab title="最新" title-style="font-size: 16px">
+    <!--关注页内容为：记录列表-->
+      <view wx:for="{{recordList}}" wx:key="*this">
+        <template is="recordItem" data="{{...item}}" />
+      </view>
+    </van-tab>
+    <van-tab title="  " disabled></van-tab>
+    <van-tab title="  " disabled></van-tab>
   </van-tabs> 
   
 

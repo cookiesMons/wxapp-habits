@@ -4,6 +4,7 @@ const util = require('../../utils/util.js')
 Page({
   data: {
     logs: [],
+    scrollTop: 0,
     imgUrls: [
       '/images/banner1.jpg',
       '/images/banner2.jpg',
@@ -91,5 +92,11 @@ Page({
         return util.formatTime(new Date(log))
       })
     })
+  },
+
+  onPageScroll(event) {
+    this.setData({
+      scrollTop: event.scrollTop
+    });
   }
 })
